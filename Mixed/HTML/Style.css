@@ -5,3 +5,7 @@ body {
     background: linear-gradient(to right, #BBF0F1 0%, #E4E4E4 61%, #F3D7A0 100%);
     color: rgb(0, 0, 0);
 }
+.logo-pet-190-titulo {
+font-family: 'Trebuchet MS',sans-serif;
+font-size: 80pt;
+}
