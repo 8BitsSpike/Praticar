@@ -17,14 +17,15 @@ body {
     display: block;
     width: 100%;
 }
-
+main{
+font-family: Laila; 
+}
 .logo-pet-190 {
     display: block;
     margin: auto;
     width: 250px;
 
 }
-
 .logo-pet-190-titulo {
     margin: auto;
     width: 300px;
@@ -40,6 +41,15 @@ body {
     font-size: 20pt;
     text-align: center;
 }
-main{
-    font-family: Laila; 
+.footer-contents {
+    display: block;
+    margin: auto;
+}
+.footer-text{
+    display: block;
+    width:400px;
+    font-size: 8px;
+    text-align: justify;
+    margin: auto;
+    display: inline-block;
 }
