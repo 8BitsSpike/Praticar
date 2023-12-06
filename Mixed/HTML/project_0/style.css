@@ -434,7 +434,6 @@ meio do documento*/
 
 }
 
-
 /* Cancelamento de pefil */
 
 form {
@@ -825,21 +824,6 @@ textarea::placeholder {
 
 /* Essa parte diz respeito a configuração especifica de cada pagina para o footer e deve ser mantida aqui 
 no final do documento*/
-
-.footer-box {
-  min-width: 480px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: flex-start;
-  background-color: rgb(211, 211, 211, 0.4);
-  min-height: 63px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-}
 
 .footer-contents {
   display: flex;
