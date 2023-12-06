@@ -1,0 +1,867 @@
+/* Para organizar melhor o documento as partes devem ficar separadas por ordem de posição
+header no topo, body no meio e footer no final do doc.
+
+Configurações extras como a adção de fontes ou customisação de partes que podem pertencer a 
+mais de um componente devem ficar antes do header, assim mantemos a legibilidade do documento.  */
+
+/* Essa parte diz respeito a estilização de partes que podem pertencer a mais de um componente e
+deve ficar aqui, no cabeçalho do documento */
+
+@font-face {
+  font-family: Kalam;
+  src: url(img/Kalam.ttf);
+}
+
+@font-face {
+  font-family: Laila;
+  src: url(img/Laila.ttf);
+}
+
+.html {
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  background: #bbf0f1;
+  background: -moz-linear-gradient(left, #bbf0f1 0%, #e4e4e4 61%, #f3d7a0 100%);
+  background: -webkit-linear-gradient(left,
+      #bbf0f1 0%,
+      #e4e4e4 61%,
+      #f3d7a0 100%);
+  background: linear-gradient(to right, #bbf0f1 0%, #e4e4e4 61%, #f3d7a0 100%);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  font-family: Laila;
+  text-shadow: 0px 4px 4px darkgray;
+  display: flex;
+  min-height: 540px;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header {
+  display: flex;
+  max-width: none;
+  max-height: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  max-width: none;
+  max-height: 63px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+button {
+  border: 1px;
+  font-family: Laila;
+  color: black;
+  border-radius: 20px;
+  border-color: darkgrey;
+  transition-duration: 0.4s;
+  box-shadow: 0px 4px 8px lightgray;
+  margin: 8px;
+  height: 20px;
+  padding: auto 8px auto 8px;
+}
+
+button:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+input,
+textarea,
+select {
+  border: 1px;
+  border-radius: 20px;
+  border-color: lightgrey;
+  padding: 2px 8px;
+  box-shadow: 0px 4px 8px lightgray;
+}
+
+/* Estilizações do cabeçalho */
+
+.logo-pet-190 {
+  display: block;
+  margin: auto;
+  width: 200px;
+  filter: drop-shadow(0px 8px 4px darkgray);
+}
+
+.logo-pet-190-titulo {
+  display: flex;
+  font-family: kalam;
+  font-size: 47pt;
+  color: #ff9494;
+  text-shadow: 0px 8px 4px darkgray;
+  letter-spacing: -4pt;
+  line-height: 40%;
+  width: 170px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  min-width: 480px;
+  max-width: none;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(211, 211, 211, 0.4);
+}
+
+.logo-pet-190-mini {
+  display: flex;
+  filter: drop-shadow(0px 8px 4px darkgray);
+  width: 40px;
+  height: 40px;
+  margin: 2px 0px 0px 0px;
+}
+
+.logo-pet-190-titulo-mini {
+  display: inline-flex;
+  font-family: kalam;
+  font-size: 18pt;
+  color: #ff9494;
+  text-shadow: 0px 8px 4px darkgray;
+  letter-spacing: -4pt;
+  width: 60px;
+  margin: 4px 4px 4px 0px;
+  justify-content: space-around;
+}
+
+.logo-header {
+  display: flex;
+  min-width: 140px;
+  justify-content: space-around;
+  align-content: center;
+  height: 40px;
+  flex-wrap: wrap;
+}
+
+.menu-header-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 250px;
+}
+
+.foto-voluntario-mini {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 0px;
+  filter: drop-shadow(0px 8px 4px darkgray);
+}
+
+/* Essa parte diz respeito a configuração especifica de cada pagina para o header e deve ser mantida aqui*/
+
+/* Estilizações do botão emergência */
+
+.btn-emergencia {
+  background-color: lightcoral;
+  width: 90px;
+  display: flex;
+  min-width: 90px;
+  box-shadow: 0px 4px 8px lightgray;
+  margin: 8px;
+  height: 20px;
+  padding: auto 8px auto 8px;
+}
+
+.btn-emergencia:hover {
+  color: black;
+  background-color: red;
+}
+
+/* Essa parte diz respeito a configuração especifica de cada pagina para o body e deve ser mantida no
+meio do documento*/
+
+/* Página index*/
+
+.box-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box {
+  display: flex;
+  margin: auto;
+  min-width: 240px;
+  min-height: 90px;
+}
+
+.login-box-menu {
+  display: flex;
+  margin: auto;
+  min-width: 130px;
+  max-width: 240px;
+  min-height: 40px;
+  flex-wrap: wrap;
+}
+
+.esqueci-senha {
+  font-size: 12px;
+}
+
+.login-box-menu:last-child {
+  justify-content: center;
+}
+
+.catch-frase {
+  font-size: 14pt;
+  text-align: center;
+}
+
+/* Página perfil1 */
+
+.perfil-display {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow-y: auto;
+}
+
+.perfil-top {
+  display: grid;
+  min-width: 520px;
+  max-width: 1040px;
+  margin: 0 auto 0px auto;
+  grid-template-columns: 50% 50%;
+  background-color: rgb(211, 211, 211, 0.4);
+  height: auto;
+  border-radius: 0px 0px 20px 20px;
+  filter: drop-shadow(0px 4px 4px darkgray);
+  align-content: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.perfil-top-logo-box {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  margin: 0px auto 0px 10px;
+}
+
+.foto-perfil-view {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 20px 0 auto;
+  height: 100px;
+}
+
+.nome-perfil-text-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 200px;
+}
+
+.perfil-top-rating-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 120px;
+  width: 300px;
+  margin: 0px 10px 0px auto;
+}
+
+.rating-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 20px 0px auto;
+}
+
+.rating-box-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.like-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.like-box-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.perfil-top-contato-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: auto;
+  margin: 0px auto 0px 10px;
+}
+
+.contato-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.perfil-top-url-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 72px;
+  margin: 0px 10px 0px auto;
+}
+
+.perfil-bio{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 130px;
+  margin: 0 10px 10px 10px;
+}
+
+.perfil-body {
+  display: grid;
+  grid-template-rows: 600px;
+  position: relative;
+  height:  200px;
+  min-width: 600px;
+  max-width: 1200px;
+  margin: 0px auto 0px auto;
+}
+
+.perfil-bio::first-line{
+  height: 28px;
+}
+
+&::before {
+  content: "";
+  position: relative;
+  background-image: url("img/pawprint.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+.perfil-body-galeria{
+  display: grid;
+  height: 200px;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.intro-galeria{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 24px;
+}
+
+.foto-galeria{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-items:center;
+  align-items:center;
+  margin: 0px auto 0px auto;
+
+}
+
+
+/* Cancelamento de pefil */
+
+form {
+  text-align: center;
+}
+
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Pagina Formulario de Usuario voluntário */
+.container-fomulario-usuario {
+  font-family: Laila;
+  text-shadow: 0px 4px 4px darkgray;
+}
+
+.container-fomulario {
+  display: grid;
+  grid-template-columns: auto 696px auto;
+  grid-template-rows: 100%;
+  width: 100%;
+  min-height: 696px;
+  height: 100%;
+  align-items: center;
+  font-family: Laila;
+  text-shadow: 0px 4px 4px darkgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fomulario-inicial {
+  display: grid;
+  grid-template-columns: 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px;
+  grid-template-rows: 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.titulo {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-content: center;
+  justify-items: center;
+}
+
+.dados-solicitado {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+}
+
+.foto-formulario-informacoes {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  border: 1px;
+  border-color: lightgrey;
+  display: flex;
+}
+
+.legenda-preview {
+  font-size: 10px;
+  text-align: center;
+}
+
+.botao-escolher-foto {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 12;
+}
+
+.formulario-layout {
+  display: grid;
+  grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+}
+
+.botao-enviar-foto {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  border: 1px;
+  font-family: Laila;
+  color: black;
+  border-radius: 20px;
+  border-color: darkgrey;
+  transition-duration: 0.4s;
+  box-shadow: 0px 4px 8px lightgray;
+}
+
+.select-perfil-foto {
+  background: none;
+  border: none;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  text-align: left;
+  padding: 8px;
+}
+
+.fileStyle {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.fileStyle::file-selector-button {
+  display: none;
+  background: none;
+  padding: none;
+  margin-right: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.alinhamento-texto {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.alinhamento-foto {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 12;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dados-form-info {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 12;
+  grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+}
+
+.alinhamento-texto-form-info {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.alinhamento-dados-form-info {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.botao-carac {
+  border: 1px solid lightgray;
+  font-family: Laila;
+  color: black;
+  border-radius: 20px;
+  border-color: darkgrey;
+  transition-duration: 0.4s;
+  box-shadow: 0px 4px 8px lightgray;
+  margin: 8px;
+  height: 20px;
+  line-height: 18px;
+}
+
+.position-bnt {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 12;
+  grid-row-end: 12;
+}
+
+/* Pagina Formulario de Usuario Organizacional */
+.alinhamento-dados-form-organiza {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  width: 100%;
+
+}
+
+.alinhamento-titulo-form-organiza {
+  display: flex;
+  grid-column-start: 6;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  width: 100%;
+}
+
+.grid-form-informacao {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  width: 100%;
+}
+
+.coluna-um {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100%;
+}
+
+.formulario-info-dados-organiza {
+  display: flex;
+  width: 100%;
+}
+
+.coluna-dois {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+}
+
+.alinhamento-form-hora-organiza {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  width: 100%;
+}
+
+.grid-form-hora {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  width: 100%;
+}
+
+.formulario-hora-organiza {
+  display: flex;
+  width: 100%;
+}
+
+.coluna-hora-um {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100%;
+}
+
+.coluna-hora-dois {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+
+}
+
+.coluna-hora-tres {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+  margin-left: 16px;
+
+}
+
+.coluna-hora-quatro {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  width: 100%;
+  margin-left: 32px;
+
+}
+
+.coluna-hora-cinco {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  width: 100%;
+  margin-left: 48px;
+
+}
+
+.coluna-hora-seis {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  width: 100%;
+  margin-left: 6px;
+
+}
+
+.coluna-hora-sete {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  width: 100%;
+  margin-left: 16px;
+
+}
+
+.coluna-hora-oito {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  width: 100%;
+  margin-left: 32px;
+
+}
+
+.horario-input {
+  font-size: 8px;
+  margin-bottom: 8px;
+}
+
+.conte-sobre-form {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 11;
+  grid-row-start: 10;
+  grid-row-end: 12;
+  width: 100%;
+
+}
+
+.position-bnt-organiza {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 12;
+  grid-row-end: 12;
+  margin-bottom: 50px;
+}
+
+/* Pagina recuperação de senha */
+
+.recuperar-senha-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-right: 8px;
+  padding-left: 68px;
+  background-color: rgb(211, 211, 211, 0.4);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.recuperacao-senha-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Menu-recupera-senha {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Essa parte diz respeito a configuração especifica de cada pagina para o footer e deve ser mantida aqui 
+no final do documento*/
+
+.footer-box {
+  min-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  background-color: rgb(211, 211, 211, 0.4);
+  min-height: 63px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-contents {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 53px;
+  gap: 18px;
+  min-width: 380px;
+  width: 80%;
+  margin: 0px 18px;
+}
+
+.footer-text {
+  display: flex;
+  min-width: 380px;
+  width: 100%;
+  font-size: 8px;
+  margin: 0px 8px 0px auto;
+  padding-top: 10px;
+}
+
+.black-line {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10% 0px 10%;
+  width: 80%;
+  height: 1px;
+}
+
+.logo-puc-footer {
+  display: flex;
+  margin: 0px auto 0px 0px;
+}
