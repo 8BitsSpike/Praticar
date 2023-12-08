@@ -17,12 +17,7 @@ deve ficar aqui, no cabeçalho do documento */
   src: url(img/Laila.ttf);
 }
 
-.html {
-  height: 100%;
-  width: 100%;
-}
-
-.body {
+body {
   background: #bbf0f1;
   background: -moz-linear-gradient(left, #bbf0f1 0%, #e4e4e4 61%, #f3d7a0 100%);
   background: -webkit-linear-gradient(left,
@@ -33,21 +28,25 @@ deve ficar aqui, no cabeçalho do documento */
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 
 main {
   font-family: Laila;
   text-shadow: 0px 4px 4px darkgray;
   display: flex;
-  min-height: 535px;
-  max-height: 535px;
+ /* min-height: 535px; */
   width: 100%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 1;
   top: 48px;
+  bottom: 54px;
+ 
 }
 
 header {
@@ -64,13 +63,8 @@ header {
 }
 
 footer {
-  display: flex;
   max-width: none;
   max-height: 63px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   min-width: 480px;
   width: 100%;
   display: flex;
@@ -81,6 +75,10 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 button {
@@ -222,6 +220,7 @@ meio do documento*/
 .box-header {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .login-box {
@@ -258,9 +257,28 @@ meio do documento*/
 .perfil-display {
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
+  position: absolute;
+  top: 0;
   flex-wrap: nowrap;
+  overflow: hidden;
   overflow-y: auto;
+}
+
+.perfil-display::before {
+  content: "";
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/pawprint.png");
+  position: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  opacity: 0.1;
 }
 
 .perfil-top {
@@ -269,7 +287,7 @@ meio do documento*/
   max-width: 1040px;
   margin: 0 auto 0px auto;
   grid-template-columns: 50% 50%;
-  background-color: rgb(211, 211, 211, 0.4);
+  background-color: rgb(211, 211, 211);
   height: auto;
   border-radius: 0px 0px 20px 20px;
   filter: drop-shadow(0px 4px 4px darkgray);
@@ -374,7 +392,7 @@ meio do documento*/
   margin: 0px 10px 0px auto;
 }
 
-.perfil-bio{
+.perfil-bio {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -388,48 +406,38 @@ meio do documento*/
 
 .perfil-body {
   display: grid;
-  grid-template-rows: 600px;
+  grid-auto-rows: auto;
   position: relative;
-  height:  200px;
-  min-width: 600px;
+  min-width: 800px;
   max-width: 1200px;
   margin: 0px auto 0px auto;
 }
 
-.perfil-bio::first-line{
+.perfil-bio::first-line {
   height: 28px;
 }
 
-&::before {
-  content: "";
-  position: relative;
-  background-image: url("img/pawprint.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1;
-}
-.perfil-body-galeria{
+.perfil-body-galeria {
   display: grid;
-  height: 200px;
+  height: auto;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-.intro-galeria{
+.intro-galeria {
   display: flex;
   justify-self: center;
   align-self: center;
   grid-column-start: 1;
   grid-column-end: 2;
-  height: 24px;
+  height: auto;
 }
 
-.foto-galeria{
+.foto-galeria {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-items:center;
-  align-items:center;
+  justify-items: center;
+  align-items: center;
   margin: 0px auto 0px auto;
 
 }
@@ -449,6 +457,8 @@ textarea::placeholder {
 .container-fomulario-usuario {
   font-family: Laila;
   text-shadow: 0px 4px 4px darkgray;
+  position: absolute;
+  top: -60px;
 }
 
 .container-fomulario {
@@ -456,16 +466,15 @@ textarea::placeholder {
   grid-template-columns: auto 696px auto;
   grid-template-rows: 100%;
   width: 100%;
-  min-height: 696px;
+  min-height: 730px;
   height: 100%;
   align-items: center;
   font-family: Laila;
   text-shadow: 0px 4px 4px darkgray;
   position: absolute;
-  top: 0;
+  top: -60px;
   left: 0;
   right: 0;
-  bottom: 0;
 }
 
 .fomulario-inicial {
