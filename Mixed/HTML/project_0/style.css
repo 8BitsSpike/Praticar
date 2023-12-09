@@ -305,17 +305,21 @@ meio do documento*/
 
 .foto-perfil-view {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin: 20px 20px 0 auto;
+  margin: auto;
   height: 100px;
+  min-width: 100px;
 }
 
 .nome-perfil-text-box {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 200px;
+  min-width: 200px;
+  width: auto;
+  height: 100px;
 }
 
 .perfil-top-rating-box {
@@ -384,7 +388,7 @@ meio do documento*/
 .perfil-top-url-box {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
@@ -400,7 +404,7 @@ meio do documento*/
   justify-content: space-evenly;
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 130px;
+  height: auto;
   margin: 0 10px 10px 10px;
 }
 
@@ -440,6 +444,11 @@ meio do documento*/
   align-items: center;
   margin: 0px auto 0px auto;
 
+}
+
+.bio {
+  text-indent: 3em;
+  text-align: justify;
 }
 
 /* Cancelamento de pefil */
