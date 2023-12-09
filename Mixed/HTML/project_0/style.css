@@ -387,8 +387,8 @@ meio do documento*/
 
 .perfil-top-url-box {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
@@ -424,7 +424,7 @@ meio do documento*/
 .perfil-body-galeria {
   display: grid;
   height: auto;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template: auto / repeat(4,25%);
 }
 
 .intro-galeria {
