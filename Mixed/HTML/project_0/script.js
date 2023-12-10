@@ -32,15 +32,15 @@ function ativaRegistro() {
 
 function selectBusca() {
     let elemento = document.getElementById("pesquisa-form-dropdown").value;
-    let respostaOrg = document.getElementById("reposta-org").style.display;
-    let respostaVet = document.getElementById("reposta-vet").style.display;
-    let respostaHotel = document.getElementById("reposta-pethotel").style.display;
-    let respostaShop = document.getElementById("reposta-petshop").style.display;
+    let respostaOrg = document.getElementById("resposta-org");
+    let respostaVet = document.getElementById("resposta-vet");
+    let respostaHotel = document.getElementById("resposta-pethotel");
+    let respostaShop = document.getElementById("resposta-petshop");
     if ((elemento == "org")) {
-        respostaHotel = "none";
-        respostaOrg = "flex";
-        respostaShop = "none";
-        respostaVet = "none";
+        respostaHotel.style.display = "none";
+        respostaOrg.style.display = "flex";
+        respostaShop.style.display = "none";
+        respostaVet.style.display = "none";
     }
     if ((elemento == "petshop")) {
         respostaOrg.style.display = "none";

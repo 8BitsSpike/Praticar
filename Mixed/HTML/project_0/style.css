@@ -911,22 +911,22 @@ textarea::placeholder {
 }
 
 .resposta-org {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 .resposta-vet {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 .resposta-pethotel {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 .resposta-petshop {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
