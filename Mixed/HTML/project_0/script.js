@@ -13,7 +13,7 @@ a seguinte organização:
 /* -Código da página login (index.html)- */
 function fechaRegistro() {
   let elemento = document.getElementById("ocupa-tela");
-  if ((elemento.style.display = "flex")) {
+  if ((elemento.style.display == "flex")) {
     elemento.style.display = "none";
   } else {
     elemento.style.display = "flex";
@@ -21,7 +21,7 @@ function fechaRegistro() {
 }
 function ativaRegistro() {
     let elemento = document.getElementById("ocupa-tela");
-    if ((elemento.style.display = "none")) {
+    if ((elemento.style.display == "none")) {
         elemento.style.display = "flex";
     } else {
         elemento.style.display = "none";
@@ -31,30 +31,30 @@ function ativaRegistro() {
 /* -Código da página pesquisa (pesquisa.html)- */
 
 function selectBusca() {
-    let elemento = document.getElementById("pesquisa-form-dropdown");
-    let respostaOrg = document.getElementById('reposta-org');
-    let respostaVet = document.getElementById("reposta-vet");
-    let respostaHotel = document.getElementById("reposta-pethotel");
-    let respostaShop = document.getElementById("reposta-petshop");
-    if((elemento.value = "org")){
-        respostaHotel.style.display = "none";
-        respostaOrg.style.display = "flex";
-        respostaShop.style.display = "none";
-        respostaVet.style.display = "none";
+    let elemento = document.getElementById("pesquisa-form-dropdown").value;
+    let respostaOrg = document.getElementById("reposta-org").style.display;
+    let respostaVet = document.getElementById("reposta-vet").style.display;
+    let respostaHotel = document.getElementById("reposta-pethotel").style.display;
+    let respostaShop = document.getElementById("reposta-petshop").style.display;
+    if ((elemento == "org")) {
+        respostaHotel = "none";
+        respostaOrg = "flex";
+        respostaShop = "none";
+        respostaVet = "none";
     }
-    if((elemento.value = "petshop")){
+    if ((elemento == "petshop")) {
         respostaOrg.style.display = "none";
         respostaHotel.style.display = "none";
         respostaShop.style.display = "flex";
         respostaVet.style.display = "none";
     }
-    if((elemento.value = "pethotel")){
+    if ((elemento == "pethotel")) {
         respostaHotel.style.display = "flex";
         respostaOrg.style.display = "none";
         respostaShop.style.display = "none";
         respostaVet.style.display = "none";
     }
-    if((elemento.value = "vet")){
+    if ((elemento == "vet")) {
         respostaHotel.style.display = "none";
         respostaOrg.style.display = "none";
         respostaShop.style.display = "none";
