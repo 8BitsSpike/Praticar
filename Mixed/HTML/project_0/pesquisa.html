@@ -8,7 +8,7 @@
     <meta name="author" content="grupo1">
     <meta name="viewpoint" content="width = 100%, initial-scale = 1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -49,14 +49,15 @@
                           <option value="org">ONGs e Abrigos para Pets</option>
                           <option value="empty" selected> </option>
                         </select>
-                        <input type="submit" onclick="">
+                        <button class="btn-select-busca" type="button" onclick="selectBusca()">
+                            Buscar</button>
                     </form>
                 </div>
             </div>
             <div class="pesquisa-resposta">
                 <div class="pesquisa-item">
-                    <div class="resposta-org">
-                        <div class="resposta-padrao">
+                    <div class="resposta-org" id="resposta-org">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil1.html'">
                             <div>
                                 <img src="img/orgs/caomer/projetocaomer.png" width="80px" height="80px"
                                     alt="logo-projeto-caomer"
@@ -98,7 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="resposta-padrao">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil2.html'">
                             <div>
                                 <img src="img/orgs/caoviver/caoviver.png" width="80px" height="80px"
                                     alt="logo-projeto-caoviver"
@@ -141,8 +142,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="resposta-petshop">
-                        <div class="resposta-padrao">
+                    <div class="resposta-petshop" id="resposta-petshop">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil3.html'">
                             <div>
                                 <img src="img/orgs/dogsShop/dogsshop.png" width="80px" height="80px"
                                     alt="logo-petshop-dogsshop"
@@ -185,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="resposta-padrao">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil4.html'">
                             <div>
                                 <img src="img/orgs/rancho&pet/rhancho&pets.png" width="80px" height="80px"
                                     alt="logo-rancho-&-pets"
@@ -228,8 +229,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="resposta-pethotel">
-                        <div class="resposta-padrao">
+                    <div class="resposta-pethotel" id="resposta-pethotel">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil7.html'">
                             <div>
                                 <img src="img/orgs/hotelPampulha/petHotelPampulha.png" width="80px" height="80px"
                                     alt="logo-pet-hotel-pampulha"
@@ -271,7 +272,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="resposta-padrao">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil8.html'">
                             <div>
                                 <img src="img/orgs/animalhouse/animalhouse.png" width="80px" height="80px"
                                     alt="logo-animal-house"
@@ -314,8 +315,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="resposta-vet">
-                        <div class="resposta-padrao">
+                    <div class="resposta-vet" id="resposta-vet">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil5.html'">
                             <div>
                                 <img src="img/orgs/saudeAnimal/saudeAnimal.jpg" width="80px" height="80px"
                                     alt="logo-veterinária-saude-animal"
@@ -357,7 +358,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="resposta-padrao">
+                        <div class="resposta-padrao" onclick="window.location.href='perfil6.html'">
                             <div>
                                 <img src="img/orgs/centroSaudeAnimal/centrosaude.png" width="80px" height="80px"
                                     alt="logo-veterinária-centro-de-saude"
@@ -420,6 +421,7 @@
         <!--<div class="footer-box">
         </div> -->
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

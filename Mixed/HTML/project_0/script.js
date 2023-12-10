@@ -11,13 +11,55 @@ a seguinte organização:
 /* -Código de uso em mais de uma página- */
 
 /* -Código da página login (index.html)- */
-function escolhaRegistro(element, valor) {
-  let elemento = getElementByClass("element");
-  if (valor == 1) {
-    elemento.style.display = none;
+function fechaRegistro() {
+  let elemento = document.getElementById("ocupa-tela");
+  if ((elemento.style.display = "flex")) {
+    elemento.style.display = "none";
   } else {
-    elemento.style.display = flex;
+    elemento.style.display = "flex";
   }
+}
+function ativaRegistro() {
+    let elemento = document.getElementById("ocupa-tela");
+    if ((elemento.style.display = "none")) {
+        elemento.style.display = "flex";
+    } else {
+        elemento.style.display = "none";
+    }
+}
+
+/* -Código da página pesquisa (pesquisa.html)- */
+
+function selectBusca() {
+    let elemento = document.getElementById("pesquisa-form-dropdown");
+    let respostaOrg = document.getElementById('reposta-org');
+    let respostaVet = document.getElementById("reposta-vet");
+    let respostaHotel = document.getElementById("reposta-pethotel");
+    let respostaShop = document.getElementById("reposta-petshop");
+    if((elemento.value = "org")){
+        respostaHotel.style.display = "none";
+        respostaOrg.style.display = "flex";
+        respostaShop.style.display = "none";
+        respostaVet.style.display = "none";
+    }
+    if((elemento.value = "petshop")){
+        respostaOrg.style.display = "none";
+        respostaHotel.style.display = "none";
+        respostaShop.style.display = "flex";
+        respostaVet.style.display = "none";
+    }
+    if((elemento.value = "pethotel")){
+        respostaHotel.style.display = "flex";
+        respostaOrg.style.display = "none";
+        respostaShop.style.display = "none";
+        respostaVet.style.display = "none";
+    }
+    if((elemento.value = "vet")){
+        respostaHotel.style.display = "none";
+        respostaOrg.style.display = "none";
+        respostaShop.style.display = "none";
+        respostaVet.style.display = "flex";
+    }
 }
 /* -Código da pagina formulário de usuário vonluntário- */
 

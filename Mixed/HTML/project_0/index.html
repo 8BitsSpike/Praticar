@@ -38,7 +38,7 @@
 
                         <button class="btn-login" type="button">
                             Login</button>
-                        <button class="btn-register" type="button">
+                        <button class="btn-register" type="button" onclick="ativaRegistro()">
                             Registrar-se</button>
                         </a>
                         <br>
@@ -49,7 +49,7 @@
                 </form>
             </div>
         </div>
-        <div class="ocupa-tela">
+        <div class="ocupa-tela" id="ocupa-tela">
             <div class="escolha-cadastro">
                 <div>
                     Que tipo de perfil gostaria de criar?<br>
@@ -63,7 +63,7 @@
                                 Pessoa Fìsica</button></a>
                     </div>
                 </div>
-                <button class="btn-cancelar-escolha" type="button" onclick="escolhaRegistro(getElementById(ocupa-tela), 1)">
+                <button class="btn-cancelar-escolha" type="button" onclick="fechaRegistro()">
                     Cancelar</button>
             </div>
         </div>
