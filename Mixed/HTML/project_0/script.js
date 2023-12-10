@@ -8,20 +8,17 @@ a seguinte organização:
  Script unicos da página que não dependem de css ou HTML 
  */
 
- /* -Código de uso em mais de uma página- */
+/* -Código de uso em mais de uma página- */
 
- /* -Código da página login (index.html)- */
- function escolhaRegistro(element , valor) {
-    let elemento = getElementById("element");
- if (valor == 1) {
+/* -Código da página login (index.html)- */
+function escolhaRegistro(element, valor) {
+  let elemento = getElementByClass("element");
+  if (valor == 1) {
     elemento.style.display = none;
- }
- else{
+  } else {
     elemento.style.display = flex;
- }
- }
- /* -Código da pagina formulário de usuário vonluntário- */
+  }
+}
+/* -Código da pagina formulário de usuário vonluntário- */
 
- /* -Código da pagina formulário de usuário organizacional- */
-
-  
+/* -Código da pagina formulário de usuário organizacional- */

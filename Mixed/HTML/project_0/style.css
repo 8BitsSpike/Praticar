@@ -273,7 +273,7 @@ meio do documento*/
 .ocupa-tela {
   display: flex;
   z-index: 3;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.4);
   height: 100dvh;
   width: 100dvw;
   justify-content: center;
