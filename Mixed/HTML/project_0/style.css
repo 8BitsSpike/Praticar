@@ -252,6 +252,40 @@ meio do documento*/
   text-align: center;
 }
 
+.escolha-cadastro {
+  display: flex;
+  z-index: 4;
+  position: absolute;
+  top: 25dvh;
+  width: 25dvw;
+  height: 25dvh;
+  border-radius: 20px;
+  background-color: lightgray;
+  border-color: darkgray;
+  border: 1px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.ocupa-tela {
+  display: flex;
+  z-index: 3;
+  background-color: rgb(0, 0, 0, 0.8);
+  height: 100dvh;
+  width: 100dvw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -80px;
+  bottom: -170px;
+  left: 0;
+  right: 0;
+
+}
+
 /* Página perfil1 */
 
 .perfil-display {

@@ -11,7 +11,15 @@ a seguinte organização:
  /* -Código de uso em mais de uma página- */
 
  /* -Código da página login (index.html)- */
-
+ function escolhaRegistro(element , valor) {
+    let elemento = getElementById("element");
+ if (valor == 1) {
+    elemento.style.display = none;
+ }
+ else{
+    elemento.style.display = flex;
+ }
+ }
  /* -Código da pagina formulário de usuário vonluntário- */
 
  /* -Código da pagina formulário de usuário organizacional- */
